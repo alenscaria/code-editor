@@ -1,10 +1,23 @@
 import './App.css';
+import SubmitButton from './components/SubmitButton';
+import CodeEditor from './components/CodeEditor';
+import DisplayQuest from './components/DisplayQuest';
+import Navbar from './components/Navbar';
+
 
 function App() {
+
+  const handleSubmit = () => {
+    // Handle submission logic here
+  };
+
   return (
-    <div className="App">
-      <p className="underline text-6l text-red-400">Logo Question Editor Submit</p>
-    </div>
+    <div>
+    <Navbar />
+    <DisplayQuest />
+    <CodeEditor />
+    <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+  </div>
   );
 }
 
