@@ -1,5 +1,5 @@
 import './App.css';
-import SubmitButton from './components/SubmitButton';
+import CustomButton from './components/CustomButton';
 import CodeEditor from './components/CodeEditor';
 import DisplayQuest from './components/DisplayQuest';
 import Navbar from './components/Navbar';
@@ -25,7 +25,7 @@ function App() {
         </div>
       </div>
       <div className="flex justify-center mt-5">
-        <SubmitButton onClick={handleSubmit}>Submit</SubmitButton>
+        <CustomButton onClick={handleSubmit}>Submit</CustomButton>
       </div>
     </div>
   );

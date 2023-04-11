@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-const SubmitButton = ({ onClick, children, className }) => {
+const CustomButton = ({ onClick, children, className }) => {
   return (
     <button 
       onClick={onClick} 
@@ -13,4 +13,4 @@ const SubmitButton = ({ onClick, children, className }) => {
   );
 };
 
-export default SubmitButton;
+export default CustomButton;

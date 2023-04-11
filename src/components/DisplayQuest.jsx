@@ -2,6 +2,7 @@
 //next and prev button outside ques section(now displays on scrolling down if much text)
 
 import React, { useState } from 'react';
+import CustomButton from './CustomButton';
 
 const questions = [
   {
@@ -46,17 +47,19 @@ const DisplayQuest = () => {
 
   return (
     <div>
+      <div>
       <h1>{currentQuestion.heading}</h1>
       <p className="mt-4">{currentQuestion.question}</p>
       <p className="mt-4">Input: {currentQuestion.input}</p>
       <p>Output: {currentQuestion.output}</p>
       {currentQuestion.constraints && <p className="mt-4">Constraints: {currentQuestion.constraints}</p>}
+      </div>
       <div>
         {currentQuestionIndex > 0 && (
-          <button className="mt-6 pr-5" onClick={handlePreviousQuestion}>Previous</button>
+          <CustomButton className="mt-6 bg-green-500 hover:bg-green-700" onClick={handlePreviousQuestion}>Previous</CustomButton>
         )}
         {currentQuestionIndex < questions.length - 1 && (
-          <button className="mt-6" onClick={handleNextQuestion}>Next</button>
+          <CustomButton className="mt-6 bg-green-500 hover:bg-green-700 ml-4" onClick={handleNextQuestion}>Next</CustomButton>
         )}
       </div>
     </div>
