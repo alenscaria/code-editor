@@ -48,11 +48,11 @@ const DisplayQuest = () => {
   return (
     <div>
       <div>
-      <h1>{currentQuestion.heading}</h1>
+      <h1 className="font-bold">{currentQuestion.heading}</h1>
       <p className="mt-4">{currentQuestion.question}</p>
-      <p className="mt-4">Input: {currentQuestion.input}</p>
-      <p>Output: {currentQuestion.output}</p>
-      {currentQuestion.constraints && <p className="mt-4">Constraints: {currentQuestion.constraints}</p>}
+      <p className="mt-4 font-semibold">Input: {currentQuestion.input}</p>
+      <p className="font-semibold">Output: {currentQuestion.output}</p>
+      {currentQuestion.constraints && <p className="mt-4 font-semibold">Constraints: {currentQuestion.constraints}</p>}
       </div>
       <div>
         {currentQuestionIndex > 0 && (

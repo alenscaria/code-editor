@@ -24,8 +24,9 @@ function App() {
           <CodeEditor />
         </div>
       </div>
-      <div className="flex justify-center mt-5">
-        <CustomButton onClick={handleSubmit}>Submit</CustomButton>
+      <div className="flex flex-row justify-center ml-[700px] mt-0">
+        <CustomButton onClick={handleSubmit}>Save</CustomButton>
+        <CustomButton onClick={handleSubmit} className="bg-red-600 ml-5">Submit</CustomButton>
       </div>
     </div>
   );
